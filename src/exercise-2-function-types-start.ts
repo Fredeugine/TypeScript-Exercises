@@ -16,7 +16,7 @@ doubleThePopulation(6.12);
 
 doubleThePopulation(8_526);
 
-doubleThePopulation(null);
+doubleThePopulation(0);
 
 // Alter this function so the `language2` parameter is optional.
 // Hint: Check `language2` is not `undefined` before passing it to `console.log()`.

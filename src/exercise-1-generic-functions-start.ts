@@ -20,7 +20,7 @@ async function fetchData<Type>(url: string) {
     const response = await fetch(url);
     const responseBody = await response.json();
 
-    return responseBody as Type;
+    return responseBody;
 }
 
 interface User {
@@ -29,10 +29,14 @@ interface User {
 
 // Pass the `User` type as a type argument to the generic `fetchData()` function.
 // This should fix the type error on Line 35.
+async function blue(){
+    let FetchedData = await fetchData<User>("https://api.github.com/users/fredeugine");
 
-let user = await fetchData<User>("http://api.com/user/1");
+    console.log(FetchedData.name);
+}
+blue()
 
-console.log(user.name);
+
 
 // ----
 

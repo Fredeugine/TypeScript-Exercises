@@ -12,7 +12,7 @@ let averageTemperature: number = 23.6;
 
 let visited : boolean = true;
 
-let currency : string = null;
+let currency : string = '';
 
 // Change the type annotations on these variables so they are correct.
 
